@@ -1,0 +1,44 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+#define endl "\n"  
+
+const int N =1e5 +5;
+int n,m ,u,v,c;
+vector<int> adj[N];
+bool vis[N];
+
+void dfs(int u){
+	vis[u]=1;
+	c++;
+	for(int v:adj[u]){
+		if(!vis[v]){
+			dfs(v);
+		}
+	}
+
+}
+
+int main(){
+
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+  
+	cin>>n>>m;
+	for(int i =0 ; i<m;i++){
+		cin>>u>>v;
+		adj[u].push_back(v);
+		adj[v].push_back(u);
+	}
+
+	dfs(1);
+	if(m==n-1 && c == n){
+		cout<<"YES";
+	}
+	else
+		cout<<"NO";
+	
+return 0 ;
+}
+
