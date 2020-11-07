@@ -6,7 +6,7 @@ const int N = 100;
 
 int node,edge,u,v;
 
-vector < pair <int,int> > Edgelist; // edge list
+vector < pair <int,int> > Edgelist; 		    // edge list
 bool matrix[N][N];				   // adjacency matrix
 vector<int> adj[N];				  // adjacency list
 
