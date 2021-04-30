@@ -48,7 +48,7 @@ vector<ll> factorize2(ll n ){ //o(sqrt(n))
 // Greatest common divisor for 2 numbers 
 // gcd(4,8) is 4 because it is the greatest common divisor of 4,8
 // 4 : 1 2 4
-// 8 : 1 2 4 5
+// 8 : 1 2 4 8
 
 // how to get gcd 
 ll gcd(ll a, ll b){ //o(n)
