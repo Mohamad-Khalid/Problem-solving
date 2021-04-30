@@ -78,6 +78,7 @@ ll lcm (ll a , ll b){ // o(a*b);
   for(ll i = max(a,b) ; ; i++ ){
     if(i%a==0 && i%b==0)
       ans=i;
+      break;
   }
   return ans;
 }
