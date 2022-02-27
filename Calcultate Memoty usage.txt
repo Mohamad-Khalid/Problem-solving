@@ -1,0 +1,11 @@
+Approximate Memory usage of a program
+
+1 kilo = 1000 byte 
+1 mega = 1000 kilo 
+1 giga = 1000 mega
+1 int = 8 byte
+1 mega = 10^6  /8 int =  12500 int
+
+-if the memory available is 10 megabytes
+ then we can store 12500 * 10 = 125000 integer
+
